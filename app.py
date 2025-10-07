@@ -1,31 +1,34 @@
-# --- INÍCIO DO CÓDIGO PARA O ARQUIVO app.py ---
+# --- INÍCIO DO CÓDIGO ATUALIZADO ---
 
 import streamlit as st
 import pandas as pd
 
 # --- CARREGAMENTO E PREPARAÇÃO DOS DADOS ---
-# Esta parte garante que a aplicação encontre os arquivos CSV.
 try:
     df_ghs = pd.read_csv('GHS.csv')
     df_frases_p = pd.read_csv('Frases P.csv')
 except FileNotFoundError:
     st.error("Erro: Verifique se os arquivos 'GHS.csv' e 'Frases p.csv' estão na mesma pasta que o app.py")
-    st.stop() # Interrompe a execução se os arquivos não forem encontrados
+    st.stop()
 
-# Corrigindo os nomes das colunas e criando a chave de busca
-# (Ajuste os nomes das colunas aqui se forem diferentes)
+# Ajuste os nomes das colunas aqui se forem diferentes no seu arquivo
 nome_coluna_classificacao = 'Classe de Perigo'
 nome_coluna_categoria = 'Categoria'
+nome_coluna_codigo_p = 'Codigo_Prec'
+nome_coluna_texto_p = 'Texto_Prec'
 df_ghs['chave_classificacao_completa'] = df_ghs[nome_coluna_classificacao].str.strip() + ' ' + df_ghs[nome_coluna_categoria].astype(str).str.strip()
 
 
-# --- LÓGICA PRINCIPAL (A FUNÇÃO QUE VOCÊ CRIOU) ---
+# --- SUBSTITUA A FUNÇÃO DE DEPURAÇÃO PELA VERSÃO CORRIGIDA ---
 def processar_classificacoes(lista_de_classificacoes: list):
+    # O modo de depuração não é mais necessário, então podemos remover os st.write
     if not lista_de_classificacoes:
         return None
 
     dados_filtrados = df_ghs[df_ghs['chave_classificacao_completa'].isin(lista_de_classificacoes)]
     if dados_filtrados.empty:
+        # Adicionamos um aviso caso a filtragem não encontre nada
+        st.warning("Nenhuma classificação correspondente foi encontrada. Verifique se o texto selecionado está correto.")
         return None
 
     palavra_advertencia = "N/A"
@@ -37,32 +40,55 @@ def processar_classificacoes(lista_de_classificacoes: list):
     pictogramas = dados_filtrados['Pictogramas'].dropna().unique().tolist()
     frases_h = (dados_filtrados['Código da Frase H'] + " " + dados_filtrados['Texto da Frase H']).dropna().unique().tolist()
 
-    codigos_p_coletados = []
-    # (Ajuste os nomes das colunas P se forem diferentes)
-    for coluna in ['Frases P (Prevenção)', 'Frases P (Resposta)', 'Frases P (Armazenamento)', 'Frases P (Disposição)']:
-        if coluna in dados_filtrados.columns:
-            codigos_p_coletados.extend(dados_filtrados[coluna].dropna().tolist())
-
-    codigos_p_unicos = list(set(codigos_p_coletados))
+    # --- INÍCIO DA CORREÇÃO NA LÓGICA DAS FRASES P --- # <-- MUDANÇA CRÍTICA AQUI
     
-    # (Ajuste os nomes das colunas 'Código da Frase P' e 'Texto da Frase P' se forem diferentes)
-    frases_p_finais = df_frases_p[df_frases_p['Codigo_Prec'].isin(codigos_p_unicos)]['Texto_Prec'].tolist()
+    frases_p_agrupadas = {
+        "Prevenção": [], "Resposta a Emergências": [],
+        "Armazenamento": [], "Disposição": []
+    }
+    mapa_colunas_p = {
+        'Frases P (Prevenção)': "Prevenção", 'Frases P (Resposta)': "Resposta a Emergências",
+        'Frases P (Armazenamento)': "Armazenamento", 'Frases P (Disposição)': "Disposição"
+    }
+
+    for coluna_original, grupo in mapa_colunas_p.items():
+        if coluna_original in dados_filtrados.columns:
+            
+            # Pega todos os valores da coluna, que podem conter múltiplos códigos
+            codigos_brutos = dados_filtrados[coluna_original].dropna().tolist()
+            
+            codigos_individuais = []
+            for entrada in codigos_brutos:
+                # Quebra a string por vírgula para separar os códigos
+                codigos_separados = str(entrada).split(',')
+                for codigo in codigos_separados:
+                    # Adiciona cada código limpo (sem espaços extras) à nossa lista
+                    codigos_individuais.append(codigo.strip())
+            
+            # Remove duplicatas da nossa lista de códigos individuais
+            codigos_unicos_para_lookup = list(set(codigos_individuais))
+
+            if codigos_unicos_para_lookup:
+                # Procura todos os códigos individuais na tabela de frases P
+                frases_do_grupo = df_frases_p[df_frases_p[nome_coluna_codigo_p].isin(codigos_unicos_para_lookup)][nome_coluna_texto_p].tolist()
+                frases_p_agrupadas[grupo] = frases_do_grupo
+                
+    # --- FIM DA CORREÇÃO ---
 
     resultado = {
         'palavra_advertencia': palavra_advertencia,
         'pictogramas': pictogramas,
         'frases_h': frases_h,
-        'frases_p': frases_p_finais
+        'frases_p_agrupadas': frases_p_agrupadas
     }
     return resultado
 
 # --- CONSTRUÇÃO DA INTERFACE WEB COM STREAMLIT ---
 
-st.set_page_config(layout="wide") # Deixa a página mais larga
-st.title("Assistente de Geração de FDS - Seção 2")
-st.markdown("Uma ferramenta para automatizar a criação da seção de identificação de perigos.")
+st.set_page_config(layout="wide")
+st.title("FDS-Harpie")
+st.markdown("Uma ferramenta simples para garantir a conformidade da seção 2 e da rotulagem de produtos químicos conforme a ABNT 14725:2023")
 
-# Pega a lista completa de classificações do dataframe para usar na caixa de seleção
 lista_de_classificacoes = df_ghs['chave_classificacao_completa'].unique()
 
 st.sidebar.header("Parâmetros de Entrada")
@@ -77,18 +103,16 @@ if st.sidebar.button('Gerar Seção 2'):
         
         st.header("Resultado Gerado")
         
-        col1, col2 = st.columns([1, 4]) # Cria duas colunas para organizar a exibição
+        col1, col2 = st.columns([1, 4])
         
         with col1:
             st.subheader("Pictogramas")
             if info_fds and info_fds['pictogramas']:
-                # Tenta exibir as imagens da pasta 'pictogramas'
                 for pic in info_fds['pictogramas']:
                     try:
-                        # Assumimos que as imagens são .png, ajuste se necessário
                         st.image(f'pictogramas/{pic}.png', width=100) 
                     except Exception as e:
-                        st.warning(f"Imagem {pic}.png não encontrada na pasta 'pictogramas'.")
+                        st.warning(f"Imagem {pic}.png não encontrada.")
             else:
                 st.write("Nenhum pictograma aplicável.")
 
@@ -100,11 +124,19 @@ if st.sidebar.button('Gerar Seção 2'):
             for frase in info_fds['frases_h']:
                 st.write(frase)
 
+            # --- INÍCIO DA MUDANÇA NA EXIBIÇÃO --- # <-- MUDANÇA AQUI
             st.subheader("Frases de Precaução (P)")
-            for frase in info_fds['frases_p']:
-                st.write(f"- {frase}")
+            frases_agrupadas = info_fds.get('frases_p_agrupadas', {})
+            
+            # Itera sobre o dicionário de grupos e frases
+            for grupo, frases in frases_agrupadas.items():
+                if frases: # Só mostra o grupo se ele tiver frases
+                    st.markdown(f"**{grupo}:**")
+                    for frase in frases:
+                        st.write(f"- {frase}")
+            # --- FIM DA MUDANÇA NA EXIBIÇÃO ---
                 
     else:
         st.sidebar.warning("Por favor, selecione ao menos uma classificação de perigo.")
 
-# --- FIM DO CÓDIGO ---
+# --- FIM DO CÓDIGO ATUALIZADO ---
