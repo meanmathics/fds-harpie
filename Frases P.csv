@@ -1,0 +1,162 @@
+Codigo_Prec,Texto_Prec,Tipo_Cond,Notas_Cond
+P101,"Se for necessário consultar um médico, tenha em mãos a embalagem ou o rótulo do produto",OBS,Produtos de consumo
+P102,Mantenha fora do alcance das crianças,OBS,Produtos de consumo
+P103,Leia com atenção e siga todas as instruções,OBS,"Produtos de consumo.
+
+- Omitir quando a P202 for utilizada."
+P201,Obtenha instruções específicas antes da utilização,OBS,"— Omitir para produtos de consumo quando a P202 for utilizada. (Mutagenicidade em células germinativas - 1A, 1B, 2. Carcinogenicidade - 1A, 1B, 2. Toxicidade à reprodução - 1A, 1B, 2. Toxicidade à reprodução - categoria adicional)."
+P202,Não manuseie o produto antes de ter lido e compreendido todas as precauções de segurança,,
+P210,"Mantenha afastado do calor, superfícies quentes, faíscas, chamas abertas e outras fontes de ignição. Não fume.",,
+P211,Não pulverize sobre chama aberta ou outra fonte de ignição.,,
+P212,Evite o aquecimento em condições de isolamento ou a redução do agente de dessensibilização.,,
+P220,Mantenha afastado de vestimentas e outros materiais combustíveis.,,
+P222,Não deixe entrar em contato com o ar.,OBS,- Caso a ênfase da advertência de perigo seja considerada necessária.
+P223,Não deixe entrar em contato com a água.,OBS,- Caso a ênfase da advertência de perigo seja considerada necessária.
+P230,"Mantenha úmido com substâncias e misturas que são molhadas, diluídas, dissolvidas ou suspensas com um inibidor, a fim de eliminar as propriedades explosivas.",USER_EDIT,"... Fabricante ou fornecedor deve especificar material apropriado. (Explosivos Divisões 1.1, 1.2, 1.3, 1.5]"
+P231,Manuseie e armazene em atmosfera de gás inerte.,USER_EDIT,"... Fabricante ou fornecedor deve especificar o líquido ou gás apropriado, se “gás inerte” não for aplicável. [- Caso a substância ou a mistura reaja prontamente com a umidade do ar.]"
+P232,Proteja da umidade.,,
+P233,Mantenha o recipiente hermeticamente fechado.,OBS,"- Caso o líquido seja volátil e possa gerar uma atmosfera explosiva. (No caso de Líquidos Inflamáveis - Categorias 1, 2 e 3. Exposição única - Categoria 3)"
+P234,Conserve somente na embalagem original.,,
+P235,Mantenha em local fresco.,OBS,"- Para os líquidos inflamáveis da categoria 1 e outros líquidos inflamáveis que sejam voláteis e possam gerar uma atmosfera explosiva. (Líquidos inflamáveis 1, 2, 3). l - Podem ser omitidas quando a frase de precaução P411 estiver indicada no rótulo. (Substâncias e misturas autorreativas Tipos A, B, C, D, E, F). l - Podem ser omitidas quando a frase de precaução P413 estiver indicada no rótulo. (Substâncias e misturas sujeitas a autoaquecimento 1, 2). l - Podem ser omitidas quando a frase de precaução P411 estiver indicada no rótulo. (Peróxidos orgânicos Tipos A, B, C, D, E, F)."
+P240,Aterre o vaso contentor e o receptor do produto durante transferências.,OBS,"— Caso o explosivo seja sensível à eletricidade estática. (Explosivos Divisões 1.1, 1.2, 1.3, 1.4, 1.5). l — Caso o líquido seja volátil e possa gerar uma atmosfera explosiva. (Líquidos inflamáveis 1, 2, 3). l — Caso o sólido seja sensível à eletricidade estática. (Sólidos inflamáveis 1, 2). l — Caso seja sensível à eletricidade estática e capaz de gerar uma atmosfera explosiva. (Substâncias e misturas autorreativas Tipos A, B, C, D, E, F). l — Caso seja sensível à eletricidade estática e capaz de gerar uma atmosfera explosiva. (Peróxidos orgânicos Tipos A, B, C, D, E, F)."
+P241,Utilize equipamento elétrico/de ventilação/de iluminação/... à prova de explosão.,USER_EDIT,"— Caso o líquido seja volátil e possa gerar uma atmosfera explosiva. l — O texto entre colchetes pode ser usado para especificar material elétrico, de ventilação, de iluminação ou outros equipamentos, se necessário e adequado. (Líquidos inflamáveis 1, 2, 3). l — Caso possam ser formadas nuvens de poeira. l — O texto entre colchetes pode ser usado para especificar material elétrico, de ventilação, de iluminação ou outros equipamentos, se necessário e adequado (Sólidos inflamáveis 1, 2)."
+P242,Utilize apenas ferramentas antifaiscantes.,OBS,"— Caso o líquido seja volátil e possa gerar uma atmosfera explosiva e se a energia mínima de ignição for muito baixa. (Isto se aplica às substâncias e misturas em que a energia de ignição mínima é de < 0,1 mJ, por exemplo, dissulfeto de carbono) (Líquidos inflamáveis 1, 2, 3)."
+P243,Tomar medidas de precaução contra descargas eletrostáticas.,OBS,"— Caso o líquido seja volátil e possa gerar uma atmosfera explosiva. (Líquidos inflamáveis 1, 2, 3)"
+P244,Mantenha válvulas e conexões isentas de óleo e graxa.,,
+P250,Não submeta a abrasão/choque/fricção/...,USER_EDIT,"... O fabricante/fornecedor pode especificar outros tipos aplicáveis, para manuseio brusco. [— Caso o explosivo seja sensível à ação mecânica. (Explosivos instáveis e divisões 1.1, 1.2, 1.3, 1.4, 1.5).]"
+P251,"Não perfure ou queime, mesmo após o uso.",,
+P260,Não inale poeiras/fumos/gases/névoas/vapores/aerossóis.,USER_EDIT,"O fabricante/fornecedor deve especificar as condições aplicáveis (Toxicidade aguda por inalação - 1, 2. Tóxico para órgãos-alvo específicos - exposição única 1, 2. Tóxico para órgãos-alvo específicos - exposição repetida ou prolongada 1, 2). 1- [— Especificar que não se pode respirar poeiras ou névoas (Corrosão à pele - 1A, 1B, 1C. Toxicidade à reprodução - categoria adicional).] 2- [— Caso, durante a utilização, possam ocorrer partículas inaláveis de poeiras ou névoas. (Corrosão à pele - 1A, 1B, 1C. Toxicidade à reprodução - categoria adicional)]."
+P261,Evite inalar poeiras/fumos/gases/névoas/vapores/aerossóis.,USER_EDIT,Fabricante/fornecedor pode especificar as condições aplicáveis. [- Podem ser omitidas quando a frase de precaução P260 estiver indicada no rótulo].
+P262,"Evite contato com os olhos, com a pele ou com a roupa.",,
+P263,Evite o contato durante a gravidez e amamentação.,,
+P264,Lave as mãos cuidadosamente após o manuseio.,USER_EDIT,... O fabricante/fornecedor deve especificar as partes do corpo que devem ser lavadas após o manuseio.
+P270,"Não coma, beba ou fume durante a utilização deste produto.",,
+P271,Utilize apenas ao ar livre ou em locais bem ventilados.,,
+P272,A roupa de trabalho contaminada não pode sair do local de trabalho.,,
+P273,Evite a liberação para o meio ambiente.,OBS,— Caso não seja o uso a que está destinado.
+P280,Use luvas de proteção/roupa de proteção/proteção ocular/proteção facial.,USER_EDIT,"O fabricante/fornecedor deve especificar o tipo apropriado de equipamento de proteção individual. 1- [Especificar as luvas/vestuário de proteção. (Toxicidade aguda – dérmica 1, 2, 3, 4)] 2- [- Especificar as luvas/vestuário de proteção e proteção para os olhos/face. (Corrosão à pele 1A, 1B, 1C)] 3- [-Especificar as luvas de proteção. (Irritação à pele - 2. Sensibilização da pele 1, 1A, 1B)] 4- [-Especificar a proteção ocular/facial. (Lesões oculares graves - 1. Irritação ocular - 2A)]."
+P282,Use luvas de proteção contra o frio e equipamento de proteção facial ou ocular.,,
+P283,Use roupa resistente ao fogo ou retardante de chamas.,,
+P284,"Em caso de ventilação inadequada, use equipamento de proteção respiratória.",OBS,"O fabricante/fornecedor deve especificar o tipo de equipamento apropriado. [— O texto entre colchetes pode ser usado nos casos em que o produto químico, no local de uso, venha acompanhado de informação adicional em que seja explicado o tipo de ventilação adequado para que possa ser usado de forma segura]."
+P231+P232,Manuseie e armazene em atmosfera de gás inerte e proteja da umidade.,USER_EDIT,"— Caso a substância ou a mistura reaja prontamente com a umidade do ar.... O fabricante/fornecedor deve especificar o líquido ou gás apropriado, se “gás inerte” não for aplicável."
+P301,EM CASO DE INGESTÃO:,,
+P302,EM CASO DE CONTATO COM A PELE:,,
+P303,EM CASO DE CONTATO COM A PELE (OU O CABELO):,,
+P304,EM CASO DE INALAÇÃO:,,
+P305,EM CASO DE CONTATO COM OS OLHOS:,,
+P306,EM CASO DE CONTATO COM A ROUPA:,,
+P308,EM CASO DE exposição ou suspeita de exposição:,,
+P310,Contate imediatamente um CENTRO DE INFORMAÇÃO TOXICOLÓGICA/médico/...,USER_EDIT,... O fabricante/fornecedor deve especificar a fonte apropriada de assistência médica de emergência.
+P311,Contate um CENTRO DE INFORMAÇÃO TOXICOLÓGICA/médico/...,USER_EDIT,... O fabricante/fornecedor deve especificar a fonte apropriada de assistência médica de emergência.
+P312,"Em caso de mal-estar, contate um CENTRO DE INFORMAÇÃO TOXICOLÓGICA /médico/...",USER_EDIT,... O fabricante/fornecedor deve especificar a fonte apropriada de assistência médica de emergência.
+P313,Consulte um médico.,OBS,"Fabricante/fornecedor deve indicar a assistência médica ou cuidado, quando apropriado."
+P314,"Em caso de mal-estar, consulte um médico.",OBS,"Fabricante/fornecedor deve indicar a assistência médica ou cuidado, quando apropriado"
+P315,Consulte imediatamente um médico.,OBS,"Fabricante/fornecedor deve indicar a assistência médica ou cuidado, quando apropriado."
+P320,É urgente um tratamento específico Tratamento específico (veja as instruções suplementares de primeiros socorros neste rótulo),USER_EDIT,.. Referenciar as instruções adicionais de primeiros socorros. [— Quando a administração imediata de um antídoto é requerida].
+P321,Tratamento específico (veja as instruções suplementares de primeiros socorros neste rótulo),USER_EDIT,"... Referenciar as instruções adicionais de primeiros socorros. [— Quando a administração imediata de um antídoto é requerida. (Toxicidade aguda – oral 1, 2, 3)] [— Quando for aconselhável informar medidas imediatas, como o uso de um produto de limpeza específico. (Toxicidade aguda – dérmica 1, 2, 3, 4)] [— Quando forem exigidas medidas específicas imediatas. (Toxicidade aguda – inalação 3)] [— Quando forem exigidas medidas imediatas. (Toxicidade para órgãos-alvo específicos, exposição única 1)] [-O fabricante/fornecedor pode especificar um produto de limpeza, se adequado (Corrosão à pele - 1A, 1B, 1C. Irritação à pele - 2. Sensibilização da pele - 1, 1A, 1B)]."
+P330,Enxague a boca.,,
+P331,NÃO provoque vômito.,,
+P332,Em caso de irritação cutânea:,OBS,"— pode ser omitida, se a P333 estiver no rótulo."
+P333,Em caso de irritação ou erupção cutânea:,,
+P334,Mergulhe em água fria [ou aplique compressas úmidas].,OBS,"— Use apenas “Mergulhar em água fria.” O texto entre colchetes não pode ser utilizado. (Substâncias e misturas que, em contato com a água, emitem gases inflamáveis 1, 2)"
+P335,Remova da pele as partículas soltas.,,
+P336,Descongele com água morna as áreas afetadas. Não esfregue a área afetada.,,
+P337,Caso a irritação ocular persista:,,
+P338,"No caso de uso de lentes de contatos, remova-as, se for fácil. Continue enxaguando.",,
+P340,Remova a pessoa para local ventilado e a mantenha em repouso em uma posição que não dificulte a respiração.,,
+P342,Em caso de sintomas respiratórios:,,
+P351,Enxague cuidadosamente com água durante vários minutos.,,
+P352,Lave com água em abundância/...,USER_EDIT,"...O fabricante/fornecedor pode especificar um produto de limpeza, se adequado, ou recomendar um outro produto nos casos excepcionais, em que a utilização de água seja claramente inadequada."
+P353,"Enxague a pele com água
+[ou tome uma ducha].",USER_EDIT,— Será incluído o texto entre colchetes quando o fabricante/fornecedor considerar adequado para o produto químico específico.
+P360,"Enxague imediatamente com água em abundância a roupa e a pele contaminadas, antes de se despir.",,
+P361,Retire imediatamente toda a roupa contaminada.,,
+P362,Retire a roupa contaminada.,,
+P363,Lave a roupa contaminada antes de usá-la novamente.,,
+P364,Lave-a antes de usar novamente.,,
+P370,Em caso de incêndio:,,
+P371,Em caso de incêndio de grandes proporções:,,
+P372,Risco de explosão.,OBS,— com exceção de explosivos da divisão 1.4. (Grupo de compatibilidade S) na embalagem de transporte.
+P373,NÃO combata o fogo quando ele atingir explosivos.,OBS,— com exceção de explosivos da divisão 1.4. (Grupo de compatibilidade S) na embalagem de transporte.
+P375,"Combata o incêndio à distância, devido ao risco de explosão.",OBS,— com exceção de explosivos da divisão 1.4. (Grupo de compatibilidade S) na embalagem de transporte.
+P376,"Contenha o vazamento, se puder ser feito com segurança",,
+P377,"Vazamento de gás com chamas: não apague, a menos que se possa conter o vazamento com segurança",,
+P378,Utilize os meios adequados para extinção.,USER_EDIT,"...O fabricante/fornecedor deve especificar os meios apropriados.
+
+— Caso a água aumente o risco."
+P380,Abandone a área.,,
+P381,"Em caso de vazamento, elimine todas as fontes de ignição",,
+P390,"Absorva o produto derramado, a fim de evitar danos materiais",,
+P391,Recolha o material derramado.,,
+P301+P310,EM CASO DE INGESTÃO: Contate imediatamente um CENTRO DE INFORMAÇÃO TOXICOLÓGICA/médico.,USER_EDIT,.. O fabricante/fornecedor deve especificar a fonte apropriada de assistência médica de emergência.
+P301+P312,"EM CASO DE INGESTÃO: Em caso de mal-estar, contate um CENTRO DE INFORMAÇÃO TOXICOLÓGICA/médico.",USER_EDIT,.. O fabricante/fornecedor deve especificar a fonte apropriada de assistência médica de emergência.
+P302+P312,"EM CASO DE CONTATO COM A PELE: Em caso de mal-estar, contate um CENTRO DE INFORMAÇÃO TOXICOLÓGICA/médico.",USER_EDIT,.. O fabricante/fornecedor deve especificar a fonte apropriada de assistência médica de emergência.
+P302+P334,EM CASO DE CONTATO COM A PELE: Mergulhe em água fria [ou aplique compressas úmidas].,USER_EDIT,— O texto entre colchetes deve ser adotado para líquidos pirofóricos.
+P302+P352,EM CASO DE CONTATO COM A PELE: Lave com água e sabão neutro em abundância.,USER_EDIT,"... O fabricante/fornecedor deve especificar um produto de limpeza, se adequado, ou recomendar um outro produto nos casos excepcionais, em que a utilização de água seja claramente inadequada."
+P304+P312,"EM CASO DE INALAÇÃO: Em caso de mal-estar, contate um CENTRO DE INFORMAÇÃO TOXICOLÓGICA/médico.",USER_EDIT,.. O fabricante/fornecedor deve especificar a fonte apropriada de assistência médica de emergência.
+P304+P340,EM CASO DE INALAÇÃO: Remova a pessoa para local ventilado e a mantenha em repouso em uma posição que não dificulte a respiração.,,
+P306+P360,"EM CASO DE CONTATO COM A ROUPA: Enxague imediatamente com água em abundância a roupa e a pele contaminadas, antes de se despir.",,
+P308+P311,EM CASO DE exposição ou suspeita de exposição: Contate um CENTRO DE INFORMAÇÃO TOXICOLÓGICA/médico.,USER_EDIT,.. O fabricante/fornecedor deve especificar a fonte apropriada de assistência médica de emergência.
+P308+P313,EM CASO DE exposição ou suspeita de exposição: Contate um médico.,,
+P332+P313,Em caso de irritação cutânea: consulte um médico.,OBS,— Podem ser omitidas quando a frase de precaução P333+P313 for indicada no rótulo..
+P333+P313,Em caso de irritação ou erupção cutânea: consulte um médico.,OBS,"Fabricante/fornecedor deve indicar a assistência médica ou cuidado, quando apropriado"
+P336+P315,Descongele com água morna as áreas afetadas. Não esfregue a área afetada. Consulte imediatamente um médico.,OBS,"Fabricante/fornecedor deve indicar a assistência médica ou cuidado, quando apropriado."
+P337+P313,Caso a irritação ocular persista: consulte um médico.,OBS,"Fabricante/fornecedor deve indicar a assistência médica ou cuidado, quando apropriado."
+P342+P311,Em caso de sintomas respiratórios: Contate um CENTRO DE INFORMAÇÃO TOXICOLÓGICA /médico.,USER_EDIT,.. O fabricante/fornecedor deve especificar a fonte apropriada de assistência médica de emergência.
+P361+P364,Retire imediatamente toda a roupa contaminada. Lave-a antes de usar novamente.,,
+P362+P364,Retire a roupa contaminada. Lave-a antes de usar novamente.,,
+P370+P376,"Em caso de incêndio: contenha o vazamento, se puder ser feito com segurança.",,
+P370+P378,Em caso de incêndio: Utilize os meios adequado para extinção.,USER_EDIT,— Caso a água aumente o risco ...O fabricante/fornecedor deve especificar os meios adequados.
+P301+P330+P331,EM CASO DE INGESTÃO: Enxague a boca. NÃO provoque vômito.,,
+P302+P335+P334,EM CASO DE CONTATO COM A PELE: Remova da pele as partículas soltas. Mergulhe em água fria [ou aplique compressas úmidas].,USER_EDIT,"— Use apenas “Mergulhar em água fria.” O texto entre colchetes não pode ser utilizado. (Substâncias e misturas que, em contato com a água, emitem gases inflamáveis 1,2)
+"
+P303+P361+P353,EM CASO DE CONTATO COM A PELE (ou com cabelo): Retire imediatamente toda a roupa contaminada. Enxague a pele com água [ou tome uma ducha].,USER_EDIT,"— É incluído o texto entre colchetes quando o fabricante/fornecedor considera adequado para o produto químico específico. (Líquidos inflamáveis - 1, 2, 3. Corrosão à pele - 1A, 1B, 1C)."
+P305+P351+P338,"EM CASO DE CONTATO COM OS OLHOS: Enxague cuidadosamente com água durante vários minutos. No caso de uso de lentes de contatos, remova-as, se for fácil. Continue enxaguando.",,
+P370+P380+P375,"Em caso de incêndio: Abandone a área. Combata o incêndio à distância, devido ao risco de explosão.",OBS,"— Para explosivos da divisão 1.4 (grupo de compatibilidade S) na embalagem de transporte. (Explosivos, Divisão 1.4)"
+P371+P380+P375,"Em caso de incêndio de grandes proporções: abandone a área. Combata o incêndio à distância, devido ao risco de explosão.",,
+P370+P372+P380+P373,Em caso de incêndio: Risco de explosão. Abandone a área. NÃO combata o fogo quando ele atingir os explosivos.,OBS,— Com exceção de explosivos da divisão 1.4 (grupo de compatibilidade S) em embalagens de transporte. (Explosivos divisão 1.4)
+P370+P380+P375+P378,"Em caso de incêndio: Abandone a área. Combata o incêndio à distância, devido ao risco de explosão. [Utilize os meios adequados para extinção].",USER_EDIT,...O fabricante/fornecedor deve especificar os meios adequados. [— O texto entre colchetes deve ser usado se a água aumentar o risco].
+P401,Armazene de acordo com a regulamentação aplicável.,USER_EDIT,... O fabricante/ fornecedor deve especificar a regulamentação nacional aplicável.
+P402,Armazene em local seco.,,
+P403,Armazene em local bem ventilado.,OBS,"[— Exceto para as substâncias e misturas que possam reagir espontaneamente, ou os peróxidos orgânicos à temperatura controlada, porque pode produzir uma condensação e posterior congelamento. (Substâncias e misturas autorreativas Tipos A, B, C, D, E, F. Substâncias e misturas autorreativas Tipos A, B, C, D, E, F)][— Caso o produto químico seja volátil e possa gerar uma atmosfera perigosa. (Toxicidade aguda – inalação 1, 2, 3. Toxicidade para órgãos-alvo específicos - exposição única categoria 3. Líquidos inflamáveis]."
+P404,Armazene em recipiente fechado.,,
+P405,Armazene em local fechado à chave.,,
+P406,Armazene em um recipiente resistente à corrosão com um revestimento interno resistente.,USER_EDIT,... O fabricante/fornecedor deve especificar outros materiais compatíveis. [— Pode ser omitida quando a frase de precaução P234 estiver indicada no rótulo].
+P407,Respeite as distâncias mínimas entre as pilhas/paletes.,,
+P410,Mantenha ao abrigo da luz solar.,OBS,"— Pode ser omitida, no caso de gases contidos em cilindros de gás transportáveis, de acordo com a instrução da embalagem P200 do Orange Book[17], a menos que esses gases estejam sujeitos à (lenta) decomposição. (Gases sob pressão: Gás dissolvido, Gás liquefeito, Gás comprimido)"
+P411,Armazene a uma temperatura não superior a...°C.,USER_EDIT,"...O fabricante/fornecedor deve especificar a temperatura usando escala de temperatura aplicável. [— Caso seja necessário Controle de temperatura (de acordo com 2.8.2.3 ou 2.15.2.3 do GHS) ou sempre que considerar necessário. (Substâncias e misturas autorreativas - Tipos A, B, C, D, E, F. Peróxidos orgânicos - Tipos A, B, C, D, E, F)]."
+P412,Não exponha a temperaturas superiores a 50 °C.,OBS,... O fabricante/fornecedor deve especificar a temperatura usando escala de temperatura aplicável.
+P413,"Armazene quantidades a granel superiores a ... kg, a uma temperatura não superior a...°C.",USER_EDIT,... O fabricante/fornecedor deve especificar a massa e a temperatura usando a escala aplicável.
+P420,Armazene afastado de outros materiais.,,
+P402+P404,Armazene em local seco. Armazene em recipiente fechado.,,
+P403+P233,Armazene em local bem ventilado. Mantenha o recipiente hermeticamente fechado,OBS,— Caso o produto químico seja volátil e possa gerar uma atmosfera perigosa.
+P403+P235,Armazene em local bem ventilado. Mantenha em local fresco.,OBS,— Para líquido inflamáveis da categoria 1 e outros líquidos inflamáveis que sejam voláteis e possam gerar uma atmosfera explosiva.
+P410+P403,Mantenha ao abrigo da luz solar. Armazene em local bem ventilado.,OBS,"— A frase de precaução P410 pode ser omitida, no caso de gases contidos em cilindros de gases transportáveis, de acordo com a instrução da embalagem P200 do Orange Book[17], a menos que esses gases estejam sujeitos à (lenta) decomposição ou polimerização."
+P410+P412,Mantenha ao abrigo da luz solar. Não exponha a temperaturas superiores a 50 °C.,OBS,...O fabricante/fornecedor deve especificar a massa e a temperatura usando a escala aplicável.
+P501,Descarte o conteúdo/recipiente em conformidade com a legislação municipal/estadual/federal/internacional.,USER_EDIT,"... Conforme a legislação municipal/estadual/federal/internacional. [O fabricante/fornecedor deve especificar se os requisitos de descarte se aplicam ao conteúdo, ao recipiente ou a ambos]."
+P502,Solicite informações ao fabricante/fornecedor sobre a recuperação/reciclagem.,,
+P503,Solicite informações ao fabricante/fornecedor/... sobre o descarte/recuperação/reciclagem.,USER_EDIT,"... O fabricante/fornecedor deve especificar as fontes apropriadas de informações conforme a legislação municipal/estadual/federal/internacional, quando aplicáveis. (Explosivos instáveis e divisões 1.1, 1.2, 1.3, 1.4, 1.5)."
+H340,Pode provocar defeitos genéticos.,USER_EDIT,"Indicar a via de exposição, se for conclusivamente comprovado que nenhuma outra via de exposição provoca o dano."
+H341,Suspeito de provocar defeitos genéticos.,USER_EDIT,"Descrever a via de exposição, se for conclusivamente comprovado que nenhuma outra via de exposição provoca o dano."
+H350,Pode provocar câncer.,USER_EDIT,"Indicar a via de exposição, se for conclusivamente comprovado que nenhuma outra via de exposição provoca o dano."
+H351,Suspeito de provocar câncer.,USER_EDIT,"Descrever a via de exposição, se for conclusivamente comprovado que nenhuma outra via de exposição provoca o dano."
+H360,Pode prejudicar a fertilidade ou o feto.,USER_EDIT,"Indicar o efeito específico, se conhecido. Indicar a via de exposição, se for conclusivamente comprovado que nenhuma outra via de exposição provoca o dano."
+H360,Pode prejudicar a fertilidade ou o feto.,USER_EDIT,"Indicar o efeito específico, se conhecido. Indicar a via de exposição, se for conclusivamente comprovado que nenhuma outra via de exposição provoca o dano."
+H360F,Pode prejudicar fertilidade.,USER_EDIT,"Indicar o efeito específico, se conhecido. Indicar a via de exposição, se for conclusivamente comprovado que nenhuma outra via de exposição provoca o dano."
+H360F,Pode prejudicar fertilidade.,USER_EDIT,"Indicar o efeito específico, se conhecido. Indicar a via de exposição, se for conclusivamente comprovado que nenhuma outra via de exposição provoca o dano."
+H360D,Pode prejudicar o feto.,USER_EDIT,"Indicar o efeito específico, se conhecido. Indicar a via de exposição, se for conclusivamente comprovado que nenhuma outra via de exposição provoca o dano."
+H360D,Pode prejudicar o feto.,USER_EDIT,"Indicar o efeito específico, se conhecido. Indicar a via de exposição, se for conclusivamente comprovado que nenhuma outra via de exposição provoca o dano."
+H360FD,Pode prejudicar a fertilidade. Pode prejudicar o feto.,USER_EDIT,"Indicar o efeito específico, se conhecido. Indicar a via de exposição, se for conclusivamente comprovado que nenhuma outra via de exposição provoca o dano."
+H360FD,Pode prejudicar a fertilidade. Pode prejudicar o feto.,USER_EDIT,"Indicar o efeito específico, se conhecido. Indicar a via de exposição, se for conclusivamente comprovado que nenhuma outra via de exposição provoca o dano."
+H360Fd,Pode prejudicar a fertilidade. Suspeita-se que prejudique o feto.,USER_EDIT,"Indicar o efeito específico, se conhecido. Indicar a via de exposição, se for conclusivamente comprovado que nenhuma outra via de exposição provoca o dano."
+H360Fd,Pode prejudicar a fertilidade. Suspeita-se que prejudique o feto.,USER_EDIT,"Indicar o efeito específico, se conhecido. Indicar a via de exposição, se for conclusivamente comprovado que nenhuma outra via de exposição provoca o dano."
+H360Df,Pode prejudicar o feto. Suspeita-se que prejudique a fertilidade.,USER_EDIT,"Indicar o efeito específico, se conhecido. Indicar a via de exposição, se for conclusivamente comprovado que nenhuma outra via de exposição provoca o dano."
+H360Df,Pode prejudicar o feto. Suspeita-se que prejudique a fertilidade.,USER_EDIT,"Indicar o efeito específico, se conhecido. Indicar a via de exposição, se for conclusivamente comprovado que nenhuma outra via de exposição provoca o dano."
+H361,Suspeita-se que prejudique a fertilidade ou o feto.,USER_EDIT,"Indicar o efeito específico, se conhecido. Indicar a via de exposição, se for conclusivamente comprovado que nenhuma outra via de exposição provoca o dano."
+H361f,Suspeita-se que prejudique a fertilidade.,USER_EDIT,"Indicar o efeito específico, se conhecido. Indicar a via de exposição, se for conclusivamente comprovado que nenhuma outra via de exposição provoca o dano."
+H361d,Suspeita-se que prejudique o feto.,USER_EDIT,"Indicar o efeito específico, se conhecido. Indicar a via de exposição, se for conclusivamente comprovado que nenhuma outra via de exposição provoca o dano."
+H361fd,Suspeita-se que prejudique a fertilidade. Suspeita-se que prejudique o feto.,USER_EDIT,"Indicar o efeito específico, se conhecido. Indicar a via de exposição, se for conclusivamente comprovado que nenhuma outra via de exposição provoca o dano."
+H370,Provoca danos aos órgãos.,USER_EDIT,"Indicar o efeito específico, se conhecido. Indicar a via de exposição, se for conclusivamente comprovado que nenhuma outra via de exposição provoca o dano."
+H371,Pode provocar danos aos órgãos.,USER_EDIT,"Indicar o efeito específico, se conhecido. Indicar a via de exposição, se for conclusivamente comprovado que nenhuma outra via de exposição provoca o dano."
+H372,Provoca danos aos órgãos.,USER_EDIT,"(indicar todos os órgãos afetados, se conhecidos) por exposição repetida ou prolongada (indicar a via de exposição, se for conclusivamente comprovado que nenhuma outra via de exposição provoca o dano)"
+H373,Pode provocar danos aos órgãos.,USER_EDIT,"(indicar todos os órgãos afetados, se conhecidos) por exposição repetida ou prolongada (indicar a via de exposição, se for conclusivamente comprovado que nenhuma outra via de exposição provoca o dano)"
