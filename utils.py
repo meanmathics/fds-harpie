@@ -54,8 +54,8 @@ def aplicar_estilo_customizado():
             }
 
 	    .floating-container a {
-                display: block;
-                padding: 10px 20px;
+    		display: block;
+   	 	padding: 10px 20px;
     		border-radius: 30px;
     		background-color: #FF4B4B;
     		color: white;
@@ -65,7 +65,7 @@ def aplicar_estilo_customizado():
     		text-decoration: none;
     		box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
     		transition: transform 0.2s ease-in-out;
-	    }
+	     }
 
             .floating-container a:hover {
                 transform: scale(1.1);
