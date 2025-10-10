@@ -74,8 +74,8 @@ A aplicação exibe na tela de resultados todos os elementos já consolidados, f
 
 Portanto, ao utilizar este sistema, estes são os potenciais benefícios:
 
-Redução de Erros: Elimina o risco de falhas na consulta e consolidação manual das informações.
-Agilidade: Reduz o tempo de elaboração significativamente.
-Padronização: Garante que a rotulagem esteja sempre consistente e de acordo com a base de dados atualizada.
+Redução de erros: Elimina o risco de falhas na consulta e consolidação manual das informações.
+Eficiência: Reduz o tempo de elaboração significativamente.
+Acurácia: Garante que a rotulagem esteja sempre consistente e de acordo com a base de dados atualizada.
 
 
