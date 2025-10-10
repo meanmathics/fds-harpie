@@ -1,9 +1,7 @@
 import streamlit as st
 from utils import aplicar_estilo_customizado, carregar_dados
 
-
-aplicar_estilo_customizado()
-df_ghs, _ = carregar_dados() 
+from utils import adicionar_fundo_css_animado
 
 st.set_page_config(
     page_title="FDS Harpie - Tela inicial",
@@ -11,8 +9,14 @@ st.set_page_config(
     layout="centered"
 )
 
+aplicar_estilo_customizado()
+adicionar_fundo_css_animado()
+
+df_ghs, _ = carregar_dados() 
+
 st.title("FDS Harpie")
 st.header("Passo 1: Selecione as Classificações de Perigo")
+
 
 lista_de_classificacoes = df_ghs['chave_classificacao_completa'].unique()
 
@@ -20,7 +24,6 @@ selecionadas = st.multiselect(
     'Selecione todas as classificações aplicáveis ao produto:',
     lista_de_classificacoes
 )
-
 
 st.write("")
 st.write("")
@@ -38,3 +41,11 @@ with col2:
 if not selecionadas:
     if 'classificacoes_selecionadas' in st.session_state:
         del st.session_state.classificacoes_selecionadas
+
+url_readme = "https://github.com/meanmathics/fds-harpie/blob/main/README.md"
+
+st.markdown(f"""
+    <div class="floating-container">
+        <a href="{url_readme}" target="_blank">?</a>
+    </div>
+""", unsafe_allow_html=True)

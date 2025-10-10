@@ -1,20 +1,21 @@
 import streamlit as st
 from utils import aplicar_estilo_customizado, carregar_dados, processar_classificacoes
 
-aplicar_estilo_customizado()
-df_ghs, df_frases_p = carregar_dados()
-
 st.set_page_config(
     page_title="FDS Harpie - Resultado",
     page_icon="🏷️",
     layout="wide"
 )
 
+aplicar_estilo_customizado()
+df_ghs, df_frases_p = carregar_dados()
+
 if st.button("⬅️ Voltar para a Seleção"):
     st.switch_page("app.py")
 
 if 'classificacoes_selecionadas' in st.session_state and st.session_state.classificacoes_selecionadas:
     selecionadas = st.session_state.classificacoes_selecionadas
+    
     info_fds = processar_classificacoes(selecionadas, df_ghs, df_frases_p)
     
     if info_fds:
@@ -52,4 +53,4 @@ if 'classificacoes_selecionadas' in st.session_state and st.session_state.classi
         st.markdown(f'<div class="texto-pequeno">{html_frases_p}</div>', unsafe_allow_html=True)
 else:
     st.warning("Nenhuma classificação foi selecionada.")
-    st.info("⬅️ Por favor, volte para a página principal para selecionar as classificações de perigo.")
+    st.info("⬅️ Por favor, volte para a página 'app' para selecionar as classificações de perigo.")
