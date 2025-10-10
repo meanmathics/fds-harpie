@@ -34,21 +34,24 @@ O sistema tem como base as tabelas de classificação. Para cada perigo, a norma
 
 Para Líquidos oxidantes - Categoria 1, a tabela nos informa que os elementos são o pictograma GHS03 (chama sobre o círculo), a palavra de advertência Perigo, a Frase H H271 e um conjunto de Frases P.
 
-https://raw.githubusercontent.com/meanmathics/fds-harpie/refs/heads/main/img/img1.png
+![Tabela para Líquidos Oxidantes](https://raw.githubusercontent.com/meanmathics/fds-harpie/refs/heads/main/img/img1.png)
 
 Para Lesões oculares graves - Categoria 2A, a tabela define o pictograma GHS07 (ponto de exclamação), a palavra de advertência Atenção, a Frase H H319 e outro conjunto de Frases P.
 
-https://raw.githubusercontent.com/meanmathics/fds-harpie/refs/heads/main/img/img2.png
+![Tabela para Danos Oculares](https://raw.githubusercontent.com/meanmathics/fds-harpie/refs/heads/main/img/img2.png)
+
 
 A base de dados das Frases de Precaução também é carregada no sistema, contendo o texto completo para cada código P.
 
-https://raw.githubusercontent.com/meanmathics/fds-harpie/refs/heads/main/img/img3.png
+![Tabela de Frases de Precaução](https://raw.githubusercontent.com/meanmathics/fds-harpie/refs/heads/main/img/img3.png)
+
 
 Passo 2 Seleção na Interface
 
 O trabalho do técnico é simplesmente selecionar as classificações de perigo identificadas para o produto na tela inicial da aplicação.
 
-https://raw.githubusercontent.com/meanmathics/fds-harpie/refs/heads/main/img/img4.png
+![Tela Inicial](https://raw.githubusercontent.com/meanmathics/fds-harpie/refs/heads/main/img/img4.png)
+
 
 Passo 3 A Lógica de Consolidação (O Cérebro do Sistema)
 
@@ -66,7 +69,7 @@ Passo 4 O Resultado Final
 
 A aplicação exibe na tela de resultados todos os elementos já consolidados, formatados e prontos para serem inseridos na FDS ou no rótulo do produto.
 
-https://raw.githubusercontent.com/meanmathics/fds-harpie/refs/heads/main/img/img5.png
+![Tela de Resultado](https://raw.githubusercontent.com/meanmathics/fds-harpie/refs/heads/main/img/img5.png)
 
 
 Portanto, ao utilizar este sistema, estes são os potenciais benefícios:
