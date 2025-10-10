@@ -53,20 +53,19 @@ def aplicar_estilo_customizado():
                 z-index: 101;
             }
 
-            .floating-container a {
+	    .floating-container a {
                 display: block;
-                width: 60px;
-                height: 60px;
-                line-height: 60px;
-                text-align: center;
-                border-radius: 50%;
-                background-color: #4682B4;
-                color: white;
-                font-size: 30px;
-                text-decoration: none;
-                box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
-                transition: transform 0.2s ease-in-out;
-            }
+                padding: 10px 20px;
+    		border-radius: 30px;
+    		background-color: #FF4B4B;
+    		color: white;
+    		font-size: 16px;
+    		font-weight: bold;
+    		text-align: center;
+    		text-decoration: none;
+    		box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    		transition: transform 0.2s ease-in-out;
+	    }
 
             .floating-container a:hover {
                 transform: scale(1.1);

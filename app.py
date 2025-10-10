@@ -14,14 +14,14 @@ adicionar_fundo_css_animado()
 
 df_ghs, _ = carregar_dados() 
 
-st.title("FDS Harpie")
-st.header("Passo 1: Selecione as Classificações de Perigo")
+#st.title("FDS Harpie")
+st.header("Assistente Web para FDS e Rotulagem de produtos químicos")
 
 
 lista_de_classificacoes = df_ghs['chave_classificacao_completa'].unique()
 
 selecionadas = st.multiselect(
-    'Selecione todas as classificações aplicáveis ao produto:',
+    'Passo 1: Selecione todas as classificações aplicáveis ao produto:',
     lista_de_classificacoes
 )
 
@@ -46,6 +46,6 @@ url_readme = "https://github.com/meanmathics/fds-harpie/blob/main/README.md"
 
 st.markdown(f"""
     <div class="floating-container">
-        <a href="{url_readme}" target="_blank">?</a>
+        <a href="{url_readme}" target="_blank">Como Funciona?</a>
     </div>
 """, unsafe_allow_html=True)
